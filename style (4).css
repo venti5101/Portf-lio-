@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #232323;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  gap: 6px;
+  position: fixed;
+  color: #FFF1F1F2;
+  z-index: 999;
+  
+  img {
+    width: 56px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #986E6E82;
+  }
+}
+
+.secao1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #232323;
+  color: #FFF1F1F2;
+  padding: 4%;
+  text-align: center;
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 10vw;
+    background: linear-gradient(to right, #ECDFC6, #F2E4D0, #FFFEFD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+p {
+  opacity: 0.9;
+  padding: 14px;
+}
+
+button {
+  border: none;
+  color: #501E1E7A;
+    a{
+    color: #2B2725;
+  }
+}
+
+.botoes {
+  display: flex;
+  opacity: 0.8;
+  gap: 12px;
+}
+
+.botao1 {
+  display: flex;
+  width: 100%;
+  background-color: #DEE9C2;
+  border-radius: 12px;
+  padding: 4px 6px 4px 6px;
+}
+
+.botao2 {
+  width: 60%;
+  background-color: #93D7A7;
+  border-radius: 12px;
+  padding: 4px 6px 4px 6px;
+}
+
+.secao2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+  
+  h2 {
+    font-size: 32px;
+    padding: 12px;
+    color: #FFF1F1F2;
+  }
+}
+
+.card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF0E4E6;
+  gap: 22px;
+}
+
+.cafe {
+  background: #2D2D2DCC;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #0002;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  
+  img {
+    width: 85%;
+    display: block;
+    margin: 5px auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 0 3px 12px #0002;
+    padding: 8px;
+  }
+  
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 8px;
+    background-color: #3E3F4563;
+    border-radius: 30px;
+    padding: 3px;
+  }
+  animation-name: cardsSurgindo;
+animation-duration: 50ms;
+animation-timeline: view();
+animation-range: entry 20% entry 150%;
+animation-fill-mode: both;
+}
+
+@keyframes cardsSurgindo {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+ul{
+  list-style: none;
+}
+
+.secao3{
+  width: 100%;
+  height: 100vh;
+  margin-top: 80px;
+  background-color: #1B1B1B;
+  color: #F2ECEC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  
+  h2{
+    font-size: 32px;
+    padding: 12px;
+    margin-top: -300px;
+  }
+}
+.divCards{
+  display: flex;
+  width: 70%;
+  gap: 16px;
+  margin-top: 36px;
+  img{
+    width: 50%;
+  }
+}
+.tech{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #00000066;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #0002;
+  box-sizing: border-box;
+  
+  img{
+    margin-top: 8px;
+  }
+  h3{
+    padding: 20px;
+  }
+  animation-name: techS;
+animation-duration: 50ms;
+animation-timeline: view();
+animation-range: entry 10% entry 160%;
+animation-fill-mode: both;
+}
+
+@keyframes techS {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+
+i{
+  margin-top: 32px;
+  background-color: #665E5E36;
+  padding: 6px;
+  border-radius: 18px;
+}
+
+a{
+  text-decoration: none;
+  color: #FFF1F1;
+}
+html{
+ scroll-behavior: smooth;
+}
